@@ -1,0 +1,315 @@
+
+/* Reset básico */
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Cor global da fonte */
+body {
+    color: #fffefe; /* Cor de fonte padrão */
+	font-family: Gill Sans, sans-serif
+}
+
+/* Justificar parágrafos */
+p {
+    text-align: justify;
+}
+
+/* Linhas coloridas fixas no topo da página */
+#orangeline { /* Botchan color */
+    border-bottom: 5px solid rgb(255, 255, 255);
+}
+
+#lilacline { /* Sanshirō color */
+    border-bottom: 5px solid rgb(104, 37, 206);
+}
+
+#tanline { /* Kokoro color */
+    border-bottom: 5px solid rgb(153, 102, 51);
+}
+
+#greenline { /* Neko color */
+    border-bottom: 5px solid rgb(19, 108, 34);
+}
+
+/* Páginas de conteúdo */
+span.secnumbers {
+    font-size: 20px;
+}
+
+/* Páginas de texto de capítulo */
+p.japanese {
+    text-align: justify;
+    clear: left;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+/* Estilos para formatação amigável para dispositivos móveis */
+body.constrain_width {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(255, 255, 255);
+    color: #000000; /* Cor de fonte para este estilo de corpo */
+}
+
+body.constrain_width > * {
+    max-width: 1200px;
+    width: 98%;
+}
+
+header.chapter_page {
+    position: fixed;
+    top: 0;
+    background: rgb(0, 2, 99);
+    z-index: 10;
+    color: #ffffff; /* Cor de fonte para o cabeçalho */
+}
+
+h1.page_title {
+    text-align: center;
+    margin-top: 5px;
+    font-size: 24px;
+    padding-bottom: 5px;
+    border-bottom: 10px solid rgb(11, 1, 100);
+    margin-bottom: 5px;
+    height: 40px;
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+ul.nav_menu {
+    list-style-type: none;
+    display: flex;
+    height: 42px;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+ul.nav_menu li a {         /*navegação aqui*/
+    text-decoration: none;
+    display: inline-block;
+    white-space: nowrap;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 8px 15px;
+    margin: 15px;
+    border: none;
+    border-radius: none;
+    color: #ffffff; /* Cor de fonte dos links */
+}
+
+ul.nav_menu li a:focus,
+ul.nav_menu li a:hover,
+ul.nav_menu li a:active {
+    color: #acacac; /* Cor de fonte dos links em foco, hover ou ativo */
+}
+
+span.vocab_area {
+    margin: 4px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    background-color: #eee;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    color: #333; /* Cor de fonte para esta área */
+}
+
+p.vocab_prompt {
+    color: #aaa;
+    padding: 0 10px;
+    overflow: hidden;
+}
+
+div.chapter_text {
+    font-size: 20px;
+    margin: 200px 20px 0;
+    color: #333; /* Cor de fonte para o texto do capítulo */
+}
+
+div.chapter_text span.vocab {
+    border-bottom: 1px solid #ccc;
+    position: relative;
+}
+
+div.chapter_text span.vocabdef {
+    position: fixed;
+    display: block;
+    visibility: hidden;
+    z-index: 20;
+    border-radius: 10px;
+    width: 96%;
+    max-width: 1180px;
+    height: 70px;
+    line-height: 40px;
+    padding: 5px 10px;
+    top: 107px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 20px;
+    overflow: hidden;
+    color: #000000; /* Cor de fonte para definições de vocabulário */
+}
+
+div.orange_vocab_bar span.vocabdef {
+    background-color: rgb(255, 181, 132);      /*aqui é quando clica na aula*/
+}
+
+div.orange_vocab_bar span.vocab:hover {
+    background-color: rgb(255, 181, 132);
+}
+
+div.lilac_vocab_bar span.vocabdef {
+    background-color: rgb(204, 177, 255);
+}
+
+div.lilac_vocab_bar span.vocab:hover {
+    background-color: rgb(204, 177, 255);
+}
+
+div.tan_vocab_bar span.vocabdef {
+    background-color: rgb(225, 178, 121);
+}
+
+div.tan_vocab_bar span.vocab:hover {
+    background-color: rgb(225, 178, 121);
+}
+
+div.green_vocab_bar span.vocabdef {
+    background-color: rgb(188, 235, 141);
+}
+
+div.green_vocab_bar span.vocab:hover {
+    background-color: rgb(188, 235, 141);
+}
+
+div.blue_vocab_bar span.vocabdef {
+    background-color: rgb(185, 213, 255);
+}
+
+div.blue_vocab_bar span.vocab:hover {
+    background-color: rgb(185, 213, 255);
+}
+
+div.chapter_text span.vocab:hover span.vocabdef {
+    visibility: visible;
+}
+
+ul.section_break {
+    list-style-type: none;
+    font-size: 16px;
+    color: #888;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+ul.section_break li a.study_guide {
+    margin: 0 30px;
+}
+
+ul.section_break li a:link,
+ul.section_break li a:visited {
+    color: #888;
+}
+
+ul.section_break li a:focus,
+ul.section_break li a:hover,
+ul.section_break li a:active {
+    color: #000;
+}
+
+/* Estilos únicos para páginas de guia de estudo */
+ul.extra_space {
+    margin-bottom: 5px;
+}
+
+div.study_guide_wrapper {
+    font-size: 20px;
+    margin: 110px 20px 0;
+}
+
+h2.study_guide_sub {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+div.practice_text {
+    font-size: 20px;
+    margin: 10px 0 20px;
+}
+
+div.rough_translation {
+    font-size: 18px;
+    margin: 10px 0 20px;
+}
+
+div.rough_translation p {
+    margin: 10px 0;
+}
+
+div.vocab_list {
+    font-size: 20px;
+    margin: 10px 0 0;
+}
+
+div.vocab_list span.vocabdef {
+    display: block;
+    clear: left;
+}
+
+/* Redimensionamento de texto (maior) e barra de vocabulário (mais estreita) para telas mais largas */
+@media screen and (min-width: 800px) {
+    ul.nav_menu li a {
+        font-size: 16px;
+    }
+
+    span.vocab_area {
+        height: 40px;
+    }
+
+    div.chapter_text {
+        margin: 160px 20px 0;
+    }
+
+    div.chapter_text span.vocabdef {
+        height: 30px;
+    }
+}
+
+.icon-grid-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 10000px; /* Ajuste conforme necessário */
+    text-align: center;
+}
+
+.icon-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%; /* Cada item ocupa metade da largura do contêiner */
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.icon-item img {
+    max-width: 200x; /* Ajuste o tamanho conforme necessário */
+    height: auto;
+}
+
+.icon-item p {
+    margin: 10px 0 0;
+    font-size: 2em;
+    color: #000000; /* Cor de fonte para ícones */
+}

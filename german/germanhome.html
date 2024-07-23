@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+	
+<head>
+
+	<meta charset="utf-8"/>
+	<meta name="description" content="Natsume Sōseki (Soseki) Japanese Literature"/>
+	<meta http-equiv="author" content="Ian Sutherland"/>
+	
+	<title>Sōseki Project</title>	
+	<meta name="viewport" content="width=device-width, initial-scale=1">	
+	<link href="css/styles_Jan2019.css" type="text/css" rel="stylesheet"/>		
+
+	<style>
+
+	div.homepage_wrapper {	
+		margin: 115px 10px 0;
+		}
+	picture.home_banner {
+		position: fixed;
+		display: block;
+		left: 50%;
+		transform: translateX(-50%);
+		}
+
+	ul.nav_menu li a#inert {
+		border-color: whitesmoke;
+		}
+	ul.nav_menu li a#inert:focus, ul.nav_menu li a#inert:hover, ul.nav_menu li a#inert:active {
+		color: #888;
+		cursor: default;
+		}
+	ul.extra_space {
+		margin-top: 70px;
+		}
+
+	div.book_holder {
+		display: flex;
+		height: 176px;
+		margin-bottom: 10px;
+		width: 98%;
+		}
+	div.book_info {
+		height: 160px;
+		overflow-y: scroll;
+		}
+	div.cover {
+		margin: 5px;
+		height: 160px;
+		width: 100px;
+		}
+
+	#orange { /* Botchan border color */
+		border: 3px solid rgb(206,69,18);
+		}
+	#lilac { /* Sanshirō border color */
+		border: 3px solid rgb(104,37,206);
+		}
+	#tan { /* Kokoro border color */
+		border: 3px solid rgb(153,102,51);
+		}
+	#green { /* Neko border color */
+		border: 3px solid rgb(19,108,34);
+		} 
+	#black { /* Short Works collage border color */
+		border: 3px solid rgb(0,0,0);
+		} 	
+
+	h2.book_title {
+		margin-top: 5px;
+		margin-left: 5px;
+		margin-bottom: 8px;
+		font-size: 16px;
+		}
+	h2#short_works {
+		margin-top: 15px; /* to compensate for no furigana */
+		}
+	h3.book_description {
+		text-align: justify;
+		margin: 0 8px 8px 5px;
+		font-size: 12px;
+		}
+	p.notes {
+		font-size: 10px;
+		margin-left: 5px;
+		margin-bottom: 8px;
+		}
+	p.click_arrow {
+		font-size: 12px;
+		margin-bottom: 10px;
+		}
+
+	@media screen and (min-width: 800px) {
+		div.homepage_wrapper {
+			margin: 150px 10px 0;
+			}
+		ul.extra_space {
+			margin-top: 100px;
+			}
+		div.book_holder {
+			height: 216px;
+			}
+		div.cover {
+			margin: 5px;
+			height: 200px;
+			width: 125px;
+			}
+		div.book_info {
+			height: 200px;
+			overflow-y: scroll;
+			}
+		h2.book_title {
+			margin-bottom: 10px;
+			font-size: 20px;
+			}
+		h3.book_description {
+			margin: 0 10px 10px 5px;
+			font-size: 16px;
+			}
+		p.notes {
+			font-size: 14px;
+			margin-right: 20px;
+			}
+		p.click_arrow {
+			font-size: 14px;
+			margin-bottom: 15px;
+			}
+		p.notes {
+			font-size: 12px;
+			margin-left: 10px;
+			margin-bottom: 10px;
+			}
+		}
+
+	</style>
+
+</head>
+
+<body class="constrain_width">
+
+<!-- fixed area at top of page -->
+
+
+
+<header class="chapter_page">
+	<div>
+		<picture class="home_banner">
+			<source media="(min-width: 800px)" srcset="../images/culturepng.jpg">
+			<img src="../images/culturepng.jpg" alt="Homepage Banner">
+		</picture>
+	</div>
+	 <ul class="nav_menu extra_space">
+		 <li><a href="../index.html">Home</a></li>
+		 <li><a href="../about.html">Sobre Nós</a></li>
+		 <li><a href="../tests.html">Testes</a></li>
+		 <li><a href="../contact.html">Contato</a></li>
+		 <li><a href="../links.html">Links</a></li>
+	 </ul>
+</header>
+
+<!-- book covers and descriptions -->
+
+<div class="homepage_wrapper">
+
+<div class="book_holder">
+	<div class="cover" id="orange">
+		<a href="cinderella.html">
+			<picture>
+				<source media="(min-width: 800px)" srcset="../images/aschenputtel-georg-albert-stroedel-1.jpg">
+				<img src="../images/aschenputtel-georg-albert-stroedel-1.jpg" height="220" width="130" alt="Cinderella">
+			</picture>
+		</a>
+	</div>
+	<div class="book_info">
+		<h2 class="book_title"> Cinderella (<ruby>Aschenputtel</ruby>)&emsp;</h2>
+		<h3 class="book_description">"Cinderella" é um famoso conto de fadas dos Irmãos Grimm, que conta a história de uma jovem chamada Cinderella que, apesar de ser maltratada por sua madrasta e suas meia-irmãs, encontra o amor verdadeiro e uma vida melhor.</h3>
+	</div>
+</div>
+	
+<div class="book_holder">
+	<div class="cover" id="lilac">
+		<a href="hanselundgretel.html">
+			<picture>
+				<source media="(max-width: 800px)" srcset="../images/Hansel.jpg">
+				<img src="../images/Hansel.jpg" height="220" width="130" alt="Hansel">
+			</picture>
+		</a>
+	</div>
+	<div class="book_info">
+		<h2 class="book_title"> João e Maria (<ruby>Hänsel und Gretel</ruby>)&emsp;</h2>
+		<h3 class="book_description">"João e Maria" é um conto de fadas dos Irmãos Grimm que narra a história de dois irmãos que enfrentam grandes desafios e mostram coragem e inteligência para superar adversidades.</h3>
+	</div>
+</div>
+	
+</body>
+</html>

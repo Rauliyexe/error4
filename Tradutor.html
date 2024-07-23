@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<meta charset="utf-8"/>
+<meta name="description" content="Natsume Sōseki (Soseki) Japanese Literature"/>
+<meta http-equiv="author" content="Ian Sutherland"/>
+<title>Sōseki Project</title>	
+<meta name="viewport" content="width=device-width, initial-scale=1">	
+<link href="css/styles_Jan2019.css" type="text/css" rel="stylesheet"/>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style2.css">
+ 
+  <style>
+
+    body, html {
+       height: 100%;
+       margin: 0;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       font-family: Arial, sans-serif;
+    }
+   
+    .icon-grid-container {
+       display: flex;
+       flex-wrap: wrap;
+       justify-content: center;
+       align-items: center;
+       max-width: 600px; /* Adjust based on your requirement */
+       text-align: center;
+    }
+   
+    .icon-item {
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       width: 50%; /* Each item takes up half the width of the container */
+       padding: 10px;
+       box-sizing: border-box;
+    }
+   
+    .icon-item img {
+       max-width: 100px; /* Adjust size as needed */
+       height: auto;
+    }
+   
+    .icon-item p {
+       margin: 10px 0 0;
+       font-size: 1em;
+    }
+    </style>
+   
+   </head>
+   
+   <header class="chapter_page">
+    <div>
+      <picture class="home_banner">
+        <source media="(min-width: 800px)" srcset="images/culturepng.jpg">
+        <img src="images/culturepng.jpg" alt="Homepage Banner">
+      </picture>
+    </div>
+     <ul class="nav_menu extra_space">
+       <li><a href="index.html">Home</a></li>
+       <li><a href="about.html">Sobre Nós</a></li>
+       <li><a href="tests.html">Testes</a></li>
+       <li><a href="contact.html">Contato</a></li>
+       <li><a href="links.html">Links</a></li>
+       <li><a href="#" id="inert">Tradutor</a></li>
+     </ul>
+  </header>
+
+  <title>Tradutor</title>
+</head>
+<body>
+  <div class="container">
+    <h1>TRADUTOR</h1>
+    <div class="content">
+      <div class="divSelects">
+        <select class="selectFrom"></select>
+        <select class="selectTo"></select>
+      </div>
+      <div class="divTextareas">
+        <textarea id="textareaFrom" rows="8" placeholder="Digitar texto"></textarea>
+        <textarea id="textareaTo" rows="8" placeholder="Tradução" disabled></textarea>
+      </div>
+      <button id="btnTranslate">TRADUZIR</button>
+    </div>
+  </div>
+  
+  <script src="script2.js"></script>
+</body>
+</html>
